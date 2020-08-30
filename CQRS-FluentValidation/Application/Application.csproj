@@ -7,11 +7,7 @@
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Handlers\CHandlers\" />
-    <Folder Include="Handlers\QHandlers\" />
     <Folder Include="Mappers\" />
-    <Folder Include="Queries\" />
-    <Folder Include="Responses\" />
-    <Folder Include="Validators\" />
   </ItemGroup>
 
   <ItemGroup>

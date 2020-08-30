@@ -40,7 +40,7 @@ namespace API
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CQRS With MediatR APIs");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CQRS MediatR APIs - FluentValidation");
             });
 
             app.UseAuthorization();
