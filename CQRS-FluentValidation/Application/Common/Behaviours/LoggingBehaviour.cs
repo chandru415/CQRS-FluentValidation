@@ -20,7 +20,7 @@ namespace Application.Common.Behaviours
 
             var user = await GetUserID();
 
-            _logger.LogInformation("Rectitude Portal Profile Request: {Name} {User} {@Request}",
+            _logger.LogInformation("CQRS Fluent Validation Request: {Name} {User} {@Request}",
                 requestName, user, request);
         }
 

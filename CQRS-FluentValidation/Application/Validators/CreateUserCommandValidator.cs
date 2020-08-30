@@ -7,7 +7,15 @@ namespace Application.Validators
     {
         public CreateUserCommandValidator()
         {
-
+            RuleFor(s => s.UserId)
+                .NotEmpty()
+                .NotNull()
+                .Matches("^[a-zA-Z0-9]*$")
+                .WithMessage("User Id should consists alphanumeric only");
+            RuleFor(s => s.Name)
+                .NotEmpty()
+                .NotNull()
+                .MaximumLength(225);
         }
     }
 }
