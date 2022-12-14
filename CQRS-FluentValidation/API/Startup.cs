@@ -1,4 +1,5 @@
 using API.Installers.Extensions;
+using API.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,10 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExcepectionHandlerMiddleware();
             }
 
             app.UseHttpsRedirection();
